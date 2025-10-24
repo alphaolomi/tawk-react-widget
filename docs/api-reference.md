@@ -1,6 +1,6 @@
 # API Reference
 
-Complete API reference for `react-tawk-messenger`.
+Complete API reference for `tawk-react-widget`.
 
 ## Table of Contents
 

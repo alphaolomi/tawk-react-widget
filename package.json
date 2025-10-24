@@ -1,6 +1,6 @@
 {
-  "name": "react-tawk-messenger",
-  "version": "3.0.0",
+  "name": "tawk-react-widget",
+  "version": "3.0.0-beta.1",
   "description": "Modern React component for Tawk.to messenger with TypeScript, React 19, and Next.js 13+ support",
   "keywords": [
     "react",
@@ -22,11 +22,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/alphaolomi/tawk-messenger-react.git"
+    "url": "https://github.com/alphaolomi/tawk-react-widget.git"
   },
-  "homepage": "https://github.com/alphaolomi/tawk-messenger-react#readme",
+  "homepage": "https://github.com/alphaolomi/tawk-react-widget#readme",
   "bugs": {
-    "url": "https://github.com/alphaolomi/tawk-messenger-react/issues"
+    "url": "https://github.com/alphaolomi/tawk-react-widget/issues"
   },
   "license": "Apache-2.0",
   "author": "Alpha Olomi <alphaolomi@pm.me>",

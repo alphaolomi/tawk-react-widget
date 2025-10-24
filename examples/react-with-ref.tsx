@@ -1,7 +1,7 @@
 // Example using React with ref to control the widget
 
 import { useRef } from 'react';
-import TawkMessenger, { TawkMessengerRef } from 'react-tawk-messenger';
+import TawkMessenger, { TawkMessengerRef } from 'tawk-react-widget';
 
 function App() {
   const tawkRef = useRef<TawkMessengerRef>(null);

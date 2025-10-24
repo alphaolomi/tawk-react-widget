@@ -1,4 +1,4 @@
-# react-tawk-messenger
+# tawk-react-widget
 
 <p align="center">
   <img src="./images/tawk-react-logo.png" alt="Tawk React Logo" width="200"/>
@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/react-tawk-messenger"><img src="https://img.shields.io/npm/v/react-tawk-messenger.svg" alt="npm version"></a>
-  <a href="https://github.com/alphaolomi/tawk-messenger-react/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/react-tawk-messenger.svg" alt="license"></a>
+  <a href="https://www.npmjs.com/package/tawk-react-widget"><img src="https://img.shields.io/npm/v/tawk-react-widget.svg" alt="npm version"></a>
+  <a href="https://github.com/alphaolomi/tawk-react-widget/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/tawk-react-widget.svg" alt="license"></a>
   <img src="https://img.shields.io/badge/TypeScript-Ready-blue.svg" alt="TypeScript">
   <img src="https://img.shields.io/badge/React-19-61dafb.svg" alt="React 19">
 </p>
@@ -32,13 +32,13 @@
 
 ```bash
 # npm
-npm install react-tawk-messenger
+npm install tawk-react-widget
 
 # yarn
-yarn add react-tawk-messenger
+yarn add tawk-react-widget
 
 # pnpm
-pnpm add react-tawk-messenger
+pnpm add tawk-react-widget
 ```
 
 ## 🚀 Quick Start
@@ -46,7 +46,7 @@ pnpm add react-tawk-messenger
 ### Basic Usage (React)
 
 ```tsx
-import TawkMessenger from 'react-tawk-messenger';
+import TawkMessenger from 'tawk-react-widget';
 
 function App() {
   return (
@@ -64,7 +64,7 @@ export default App;
 
 ```tsx
 // app/layout.tsx
-import { TawkMessenger } from 'react-tawk-messenger/nextjs';
+import { TawkMessenger } from 'tawk-react-widget/nextjs';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -83,7 +83,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 ```tsx
 // pages/_app.tsx
 import type { AppProps } from 'next/app';
-import { TawkMessenger } from 'react-tawk-messenger/nextjs';
+import { TawkMessenger } from 'tawk-react-widget/nextjs';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -107,7 +107,7 @@ Control the widget programmatically using refs:
 
 ```tsx
 import { useRef } from 'react';
-import TawkMessenger, { TawkMessengerRef } from 'react-tawk-messenger';
+import TawkMessenger, { TawkMessengerRef } from 'tawk-react-widget';
 
 function App() {
   const tawkRef = useRef<TawkMessengerRef>(null);
@@ -245,9 +245,9 @@ This package is a modern TypeScript fork of [@tawk.to/tawk-messenger-react](http
 
 - [Tawk.to Website](https://www.tawk.to)
 - [Tawk.to JavaScript API Documentation](https://developer.tawk.to/jsapi/)
-- [GitHub Repository](https://github.com/alphaolomi/tawk-messenger-react)
-- [npm Package](https://www.npmjs.com/package/react-tawk-messenger)
+- [GitHub Repository](https://github.com/alphaolomi/tawk-react-widget)
+- [npm Package](https://www.npmjs.com/package/tawk-react-widget)
 
 ## 💬 Support
 
-For issues, questions, or contributions, please visit our [GitHub Issues](https://github.com/alphaolomi/tawk-messenger-react/issues).
+For issues, questions, or contributions, please visit our [GitHub Issues](https://github.com/alphaolomi/tawk-react-widget/issues).

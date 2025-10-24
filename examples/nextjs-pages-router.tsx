@@ -2,7 +2,7 @@
 // pages/_app.tsx
 
 import type { AppProps } from 'next/app';
-import { TawkMessenger } from 'react-tawk-messenger/nextjs';
+import { TawkMessenger } from 'tawk-react-widget/nextjs';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

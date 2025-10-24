@@ -1,4 +1,4 @@
-# Contributing to react-tawk-messenger
+# Contributing to tawk-react-widget
 
 Thank you for your interest in contributing! This guide will help you get started.
 
@@ -15,8 +15,8 @@ Thank you for your interest in contributing! This guide will help you get starte
 2. Clone your fork:
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/tawk-messenger-react.git
-   cd tawk-messenger-react
+   git clone https://github.com/YOUR_USERNAME/tawk-react-widget.git
+   cd tawk-react-widget
    ```
 
 3. Install dependencies:
@@ -35,7 +35,7 @@ Thank you for your interest in contributing! This guide will help you get starte
 ### Project Structure
 
 ```
-tawk-messenger-react/
+tawk-react-widget/
 ├── src/
 │   ├── index.tsx          # Main component
 │   ├── nextjs.tsx         # Next.js specific export

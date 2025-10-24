@@ -1,6 +1,6 @@
-# How to Use react-tawk-messenger
+# How to Use tawk-react-widget
 
-This guide provides detailed instructions on how to use `react-tawk-messenger` in your React and Next.js applications.
+This guide provides detailed instructions on how to use `tawk-react-widget` in your React and Next.js applications.
 
 ## Table of Contents
 
@@ -16,11 +16,11 @@ This guide provides detailed instructions on how to use `react-tawk-messenger` i
 Install the package using your preferred package manager:
 
 ```bash
-npm install react-tawk-messenger
+npm install tawk-react-widget
 # or
-yarn add react-tawk-messenger
+yarn add tawk-react-widget
 # or
-pnpm add react-tawk-messenger
+pnpm add tawk-react-widget
 ```
 
 ## Basic Setup
@@ -86,7 +86,7 @@ For Next.js App Router, use the special `nextjs` import which includes the `'use
 
 ```tsx
 // app/layout.tsx
-import { TawkMessenger } from 'react-tawk-messenger/nextjs';
+import { TawkMessenger } from 'tawk-react-widget/nextjs';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -107,7 +107,7 @@ For Next.js Pages Router, add the component to your `_app.tsx`:
 ```tsx
 // pages/_app.tsx
 import type { AppProps } from 'next/app';
-import { TawkMessenger } from 'react-tawk-messenger/nextjs';
+import { TawkMessenger } from 'tawk-react-widget/nextjs';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -276,7 +276,7 @@ function App() {
 The package is written in TypeScript and provides full type definitions:
 
 ```tsx
-import TawkMessenger, { TawkMessengerProps, TawkMessengerRef } from 'react-tawk-messenger';
+import TawkMessenger, { TawkMessengerProps, TawkMessengerRef } from 'tawk-react-widget';
 
 // Props are fully typed
 const config: TawkMessengerProps = {
@@ -301,7 +301,7 @@ const status = tawkRef.current?.getStatus(); // Type: 'online' | 'away' | 'offli
 
 ```tsx
 import { useState } from 'react';
-import TawkMessenger from 'react-tawk-messenger';
+import TawkMessenger from 'tawk-react-widget';
 
 function App() {
   const [showChat, setShowChat] = useState(false);
@@ -352,14 +352,14 @@ function App() {
 
 ### Next.js "window is not defined" Error
 
-Make sure you're using the `react-tawk-messenger/nextjs` import for Next.js applications:
+Make sure you're using the `tawk-react-widget/nextjs` import for Next.js applications:
 
 ```tsx
 // ❌ Wrong
-import TawkMessenger from 'react-tawk-messenger';
+import TawkMessenger from 'tawk-react-widget';
 
 // ✅ Correct for Next.js
-import { TawkMessenger } from 'react-tawk-messenger/nextjs';
+import { TawkMessenger } from 'tawk-react-widget/nextjs';
 ```
 
 ### TypeScript Errors

@@ -1,6 +1,6 @@
 # Migration Guide
 
-Guide for migrating from `@tawk.to/tawk-messenger-react` v2.x to `react-tawk-messenger` v3.x
+Guide for migrating from `@tawk.to/tawk-messenger-react` v2.x to `tawk-react-widget` v3.x
 
 ## Overview
 
@@ -26,9 +26,9 @@ yarn remove @tawk.to/tawk-messenger-react
 ### Install New Package
 
 ```bash
-npm install react-tawk-messenger
+npm install tawk-react-widget
 # or
-yarn add react-tawk-messenger
+yarn add tawk-react-widget
 ```
 
 ## Breaking Changes
@@ -40,7 +40,7 @@ yarn add react-tawk-messenger
 import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 
 // ✅ After (v3.x)
-import TawkMessenger from 'react-tawk-messenger';
+import TawkMessenger from 'tawk-react-widget';
 ```
 
 ### 2. Event Callback Props
@@ -141,7 +141,7 @@ v3.x is written in TypeScript with full type definitions:
 
 ```tsx
 // ✅ v3.x with TypeScript
-import TawkMessenger, { TawkMessengerRef, TawkMessengerProps } from 'react-tawk-messenger';
+import TawkMessenger, { TawkMessengerRef, TawkMessengerProps } from 'tawk-react-widget';
 import { useRef } from 'react';
 
 function App() {
@@ -178,7 +178,7 @@ function App() {
 }
 
 // ✅ After (v3.x)
-import TawkMessenger from 'react-tawk-messenger';
+import TawkMessenger from 'tawk-react-widget';
 
 function App() {
   return (
@@ -217,7 +217,7 @@ function App() {
 
 // ✅ After (v3.x)
 import { useRef } from 'react';
-import TawkMessenger, { TawkMessengerRef } from 'react-tawk-messenger';
+import TawkMessenger, { TawkMessengerRef } from 'tawk-react-widget';
 
 function App() {
   const tawkRef = useRef<TawkMessengerRef>(null);
@@ -240,7 +240,7 @@ function App() {
 ```tsx
 // ✅ New in v3.x - Next.js App Router
 // app/layout.tsx
-import { TawkMessenger } from 'react-tawk-messenger/nextjs';
+import { TawkMessenger } from 'tawk-react-widget/nextjs';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -256,7 +256,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 // ✅ New in v3.x - Next.js Pages Router
 // pages/_app.tsx
 import type { AppProps } from 'next/app';
-import { TawkMessenger } from 'react-tawk-messenger/nextjs';
+import { TawkMessenger } from 'tawk-react-widget/nextjs';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -301,7 +301,7 @@ Optimized build with tree-shaking support for smaller bundle sizes.
 Make sure you've installed the new package:
 
 ```bash
-npm install react-tawk-messenger
+npm install tawk-react-widget
 ```
 
 ### TypeScript errors
@@ -322,14 +322,14 @@ Update your `tsconfig.json`:
 Use the Next.js-specific import:
 
 ```tsx
-import { TawkMessenger } from 'react-tawk-messenger/nextjs';
+import { TawkMessenger } from 'tawk-react-widget/nextjs';
 ```
 
 ## Need Help?
 
 - 📖 [Documentation](./docs/how-to-use.md)
 - 🔍 [API Reference](./docs/api-reference.md)
-- 💬 [GitHub Issues](https://github.com/alphaolomi/tawk-messenger-react/issues)
+- 💬 [GitHub Issues](https://github.com/alphaolomi/tawk-react-widget/issues)
 - 📝 [Examples](./examples)
 
 ## Rollback
@@ -337,6 +337,6 @@ import { TawkMessenger } from 'react-tawk-messenger/nextjs';
 If you need to rollback to v2.x:
 
 ```bash
-npm uninstall react-tawk-messenger
+npm uninstall tawk-react-widget
 npm install @tawk.to/tawk-messenger-react@2.1.0
 ```

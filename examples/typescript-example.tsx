@@ -1,7 +1,7 @@
 // Full TypeScript example with all features
 
 import { useRef, useEffect } from 'react';
-import TawkMessenger, { TawkMessengerRef, TawkMessengerProps } from 'react-tawk-messenger';
+import TawkMessenger, { TawkMessengerRef, TawkMessengerProps } from 'tawk-react-widget';
 
 function App() {
   const tawkRef = useRef<TawkMessengerRef>(null);

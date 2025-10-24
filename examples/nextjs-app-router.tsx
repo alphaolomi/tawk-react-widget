@@ -1,7 +1,7 @@
 // Example for Next.js 13+ App Router
 // app/layout.tsx or app/page.tsx
 
-import { TawkMessenger } from 'react-tawk-messenger/nextjs';
+import { TawkMessenger } from 'tawk-react-widget/nextjs';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

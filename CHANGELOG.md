@@ -27,7 +27,7 @@ This is a complete rewrite of the package with modern tooling and best practices
 
 ### 🔧 Changed
 
-- **Package Name**: Changed from `@tawk.to/tawk-messenger-react` to `react-tawk-messenger`
+- **Package Name**: Changed from `@tawk.to/tawk-messenger-react` to `tawk-react-widget`
 - **Build System**: Replaced Vite with tsup for library builds
 - **Test Framework**: Replaced Jest with Vitest
 - **File Extensions**: All source files migrated from `.js` to `.ts/.tsx`
@@ -70,7 +70,7 @@ If you're upgrading from v2.x:
 
    ```bash
    npm uninstall @tawk.to/tawk-messenger-react
-   npm install react-tawk-messenger
+   npm install tawk-react-widget
    ```
 
 2. Update imports:
@@ -80,9 +80,9 @@ If you're upgrading from v2.x:
    import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 
    // After
-   import TawkMessenger from 'react-tawk-messenger';
+   import TawkMessenger from 'tawk-react-widget';
    // or for Next.js
-   import { TawkMessenger } from 'react-tawk-messenger/nextjs';
+   import { TawkMessenger } from 'tawk-react-widget/nextjs';
    ```
 
 3. Update prop names (event callbacks):
