@@ -1,0 +1,105 @@
+{
+  "name": "react-tawk-messenger",
+  "version": "3.0.0",
+  "description": "Modern React component for Tawk.to messenger with TypeScript, React 19, and Next.js 13+ support",
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-19",
+    "nextjs",
+    "next-13",
+    "next-14",
+    "next-15",
+    "app-router",
+    "pages-router",
+    "tawk",
+    "tawk.to",
+    "tawkto",
+    "chat",
+    "live-chat",
+    "customer-support",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alphaolomi/tawk-messenger-react.git"
+  },
+  "homepage": "https://github.com/alphaolomi/tawk-messenger-react#readme",
+  "bugs": {
+    "url": "https://github.com/alphaolomi/tawk-messenger-react/issues"
+  },
+  "license": "Apache-2.0",
+  "author": "Alpha Olomi <alphaolomi@pm.me>",
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./nextjs": {
+      "import": {
+        "types": "./dist/nextjs.d.ts",
+        "default": "./dist/nextjs.js"
+      },
+      "require": {
+        "types": "./dist/nextjs.d.cts",
+        "default": "./dist/nextjs.cjs"
+      }
+    }
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@typescript-eslint/eslint-plugin": "^8.46.2",
+    "@typescript-eslint/parser": "^8.46.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "@vitest/coverage-v8": "^4.0.2",
+    "eslint": "^9.38.0",
+    "jsdom": "^27.0.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
